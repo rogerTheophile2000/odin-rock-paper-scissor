@@ -18,23 +18,29 @@
         </header>
         <div class="game">
             <div class="images">
-                <div class="choice" id="rock">
-                    <img src="/images/rock.png" alt="">
+                <div class="choice">
+                    <img src="/images/rock.png" alt="" id="rock">
                 </div>
-                <div class="choice" id="paper">
-                    <img src="/images/paper.png" alt="">
+                <div class="choice">
+                    <img src="/images/paper.png" alt="" id="paper">
                 </div>
-                <div class="choice" id="scissor">
-                    <img src="/images/scissors.png" alt="">
+                <div class="choice">
+                    <img src="/images/scissors.png" alt="" id="scissor">
                 </div>
             </div>
             <div class="scores">
-                <h1>Score : <span class="score">00</span></h1>
+                <h1> Your Score : <span class="scoreplayer" id="scoreplayer">0</span></h1>
+                <h1> Computer Score : <span class="score" id="scorecomputer">0</span></h1>
+            </div>
+            <div class="result">
+                <h1 id="result"></h1>
             </div>
             <div class="restart">
-                <button id="restart">restart</button>
+                <button id="restart">Restart</button>
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

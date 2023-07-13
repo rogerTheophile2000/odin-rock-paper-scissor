@@ -34,7 +34,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 7rem;
+  padding: 0.3rem 7rem;
 }
 
 header ul {
@@ -101,8 +101,8 @@ header ul li a:hover {
     background-color: rgba(255, 255, 255, 0.4);
     width: 90vw;
     margin: 2rem auto;
-    height: 80vh;
-    padding: 2rem;
+    height: 85vh;
+    padding: 1rem;
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
@@ -118,6 +118,7 @@ header ul li a:hover {
     align-items: center;
 }
 
+
 .game .images .choice{
     padding: 5px;
     border-radius: var(--border-radius);
@@ -128,11 +129,18 @@ header ul li a:hover {
 
 .scores {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.scores .scoreplayer {
+    color: blue;
 }
 
 .scores .score {
     color: red;
-    font-size: 2rem;
 }
 .restart {
     display: flex;
@@ -143,4 +151,12 @@ header ul li a:hover {
 #restart{
     padding: 10px 1.4rem;
     border-radius: var(--border-radius);
+    cursor: pointer;
+    color: var(--secondary-color);
+    border: none;
+    background-color: var(--primary-color);
+}
+
+#result{
+    text-align: center;
 }
