@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary-color: red;
+  --secondary-color: #ccc;
+  --hover-color: green;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url("/images/back.jpg") no-repeat center center / cover;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar style */
+header {
+  z-index: 400;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 7rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 3rem;
+}
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header ul li a:hover {
+  text-decoration: underline;
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* Home syle */
+
+.home {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90vw;
+    margin: 2rem auto;
+    height: 80vh;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.home .title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.home .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.home .body img {
+    width: 550px;
+}
+
+.home .body .body-text {
+    padding-right: 2rem;
+    text-transform: capitalize;
+    text-align: justify;
+}
+.home .body .body-text p {
+    margin-bottom: 7px;
+    font-size: 1.3rem;
+}
